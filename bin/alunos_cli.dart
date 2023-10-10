@@ -30,7 +30,7 @@ class ExemploCommand extends Command {
 
 
 ExemploCommand(){
-argParser.addOption('template', abbr:  't'); 
+argParser.addOption('template', abbr:  't', help: 'Template de criacao do projeto'); 
 }
 
 
