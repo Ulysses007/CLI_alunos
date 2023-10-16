@@ -32,8 +32,6 @@ class EstudanteRepository {
       throw Exception();
     }
 
-    //final responseData = jsonDecode(studentresult.body);
-
     if (studentresult.body == '{}') {
       throw Exception('Aluno não encontrado');
     }

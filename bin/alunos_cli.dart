@@ -1,8 +1,8 @@
 // CLI é uma abreviação para comand line interface
 
-import 'dart:async';
 
-import 'package:args/args.dart';
+import 'package:alunos_cli/src/comands/students/students_comand.dart';
+
 import 'package:args/command_runner.dart';
 
 void main(List<String> arguments) {
@@ -17,9 +17,11 @@ void main(List<String> arguments) {
 //   print('${argResult['name']}');
 //   print('${argResult['template']}');
 
-CommandRunner('ADF CLI', 'ADF')..addCommand(ExemploCommand())..run(arguments);
+CommandRunner('ADF CLI', 'ADF')..addCommand(StudentsComand())..run(arguments);
 
 }
+
+
 
 // Classe que implementa o CLI
 class ExemploCommand extends Command {
