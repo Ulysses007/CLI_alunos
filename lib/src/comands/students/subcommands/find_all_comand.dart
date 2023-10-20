@@ -7,13 +7,15 @@ import '../../../repositories/estudante_repository.dart';
 class FindAllComand extends Command {
   final EstudanteRepository repository;
 
-  FindAllComand(this.repository);
+
 
   @override
   String get description => 'Find all students';
 
   @override
   String get name => 'findAll';
+
+  FindAllComand(this.repository);
 
   @override
   void run() async {
